@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>01-jt-maven</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>jt-common</module>
+        <module>jt-gateway</module>
+        <module>jt-portal</module>
+        <module>jt-genterator</module>
+    </modules>
+    <properties>
+        <spring.boot.version>2.3.2.RELEASE</spring.boot.version>
+    </properties>
+    <!--当父工程只做依赖版本，打包方式设置为pom方式-->
+    <packaging>pom</packaging>
+    <!--依赖管理-->
+    <dependencyManagement>
+        <dependencies>
+            <!--这里的依赖在子工程需要时，可以直接import-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <!--这里面${}表达式来时pom文件的properties-->
+                <version>${spring.boot.version}</version>
+                <!--这个import表示可以应用，artifactId中的依赖-->
+                <scope>import</scope>
+                <!--类型，当scope为import时，这里的type必须为pom-->
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
