@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01-jt-maven.iml" filepath="$PROJECT_DIR$/01-jt-maven.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-common/jt-common.iml" filepath="$PROJECT_DIR$/jt-common/jt-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-common/jt-common-basic/jt-common-basic.iml" filepath="$PROJECT_DIR$/jt-common/jt-common-basic/jt-common-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jt-portal/jt-demos/jt-demos.iml" filepath="$PROJECT_DIR$/jt-portal/jt-demos/jt-demos.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-gateway/jt-gateway.iml" filepath="$PROJECT_DIR$/jt-gateway/jt-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-genterator/jt-genterator.iml" filepath="$PROJECT_DIR$/jt-genterator/jt-genterator.iml" />
       <module fileurl="file://$PROJECT_DIR$/jt-portal/jt-member/jt-member.iml" filepath="$PROJECT_DIR$/jt-portal/jt-member/jt-member.iml" />

@@ -24,9 +24,9 @@
             <!--这里的依赖在子工程需要时，可以直接import-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
+                <artifactId>spring-boot-starter-web</artifactId>
                 <!--这里面${}表达式来时pom文件的properties-->
-                <version>${spring.boot.version}</version>
+                <version>2.3.2.RELEASE</version>
                 <!--这个import表示可以应用，artifactId中的依赖-->
                 <scope>import</scope>
                 <!--类型，当scope为import时，这里的type必须为pom-->
